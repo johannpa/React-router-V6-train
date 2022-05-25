@@ -7,6 +7,7 @@ function App() {
       <header className="App-header">
         <BrowserRouter>
           <Routes>
+            {/* hard coded */}
             <Route path='/' element={<div>Home page</div>}></Route>
             <Route path='/about' element={
             <div>
