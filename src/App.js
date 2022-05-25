@@ -1,4 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import About from './pages/About';
+import Home from './pages/Home';
+import Products from './pages/Products';
 import './App.css';
 
 function App() {
@@ -7,13 +10,9 @@ function App() {
       <header className="App-header">
         <BrowserRouter>
           <Routes>
-            {/* hard coded */}
-            <Route path='/' element={<div>Home page</div>}></Route>
-            <Route path='/about' element={
-            <div>
-              <h2>About</h2>
-            </div>
-            }></Route>
+            <Route path='/' element={<Home/>} />
+            <Route path='about' element={<About/>} />
+            <Route path='products' element={<Products/>} />
           </Routes>
         </BrowserRouter>
       </header>
