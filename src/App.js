@@ -7,10 +7,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
         <BrowserRouter>
-          <nav>Our navbar</nav>
           <Routes>
             <Route path='/' element={<Home/>}>
             <Route path='about' element={<About/>} />
@@ -18,10 +15,7 @@ function App() {
             <Route path='*' element={<Error/>} />
             </Route>
           </Routes>
-          <footer>our footer</footer>
         </BrowserRouter>
-      </header>
-    </div>
   );
 }
 

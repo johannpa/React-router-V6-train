@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 const Home = () => {
     return (
         <>
+            <Navbar/>
             <section>
                 <h2>Home page</h2>
                 <Link to='/about' className='btn'>
